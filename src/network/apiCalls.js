@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASEURL = "http://localhost:8080";
+const BASEURL = process.env.REACT_APP_BASE_URL || "http://localhost:8080";
 
 // GET
 export const apiGetCall = (route) => {

@@ -7,6 +7,7 @@ export const FormInput = ({
   inputClasses,
   labelClasses,
   value,
+  error,
   onChange,
   ...props
 }) => {
@@ -22,6 +23,7 @@ export const FormInput = ({
         value={value}
         onChange={onChange}
       ></input>
+      <p className="text-red-400">{error}</p>
     </div>
   );
 };
